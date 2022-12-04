@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fc727d;
+    --section-spacing: 54px
+}
+
+section {
+    margin-top: var(--section-spacing);
+    position: relative;
+    padding: 24px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+span  {
+    display: inline-block;
+}
+
+body {
+    background-color: #ccc;
+}
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    background-color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 24px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .alphabet {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+header .logo .name {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials i {
+    margin: 0 2px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+/* End Header */
+
+
+/* About */
+.about .desc {
+    margin-top: 14px;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+.about-btn {
+    margin-top: 24px;
+    transform: translateX(120%);
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.introduction-content {
+    float: left;
+    margin-left: 50px;
+}
+
+.introduction-content h1 {
+    margin-top: 20px;
+}
+
+.introduction-content .statistical {
+    display: flex;
+}
+
+.statistical {
+    margin-top: 18px;
+}
+
+.statistical-info {
+    margin-right: 24px;
+}
+
+.statistical span {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.statistical p {
+    font-size: 14px;
+    opacity: 0.8;
+    color: #000;
+}
+
+
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-skills,
+.core-skills {
+    width: 49%;
+}
+
+.skills-detail {
+    margin-top: 20px;
+}
+
+.btn-skill {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    outline: none;
+    border-radius: 16px;
+    background-color: transparent;
+    margin-right: 6px;
+    padding: 8px 14px;
+    margin-bottom: 8px;
+}
+
+/* Work */
+.work-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-content .detail {
+    width: 49%;
+}
+
+.work-content .detail h3 {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.work-content .detail h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.work-content .detail h5 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.work-content .detail ul {
+    margin-left: 18px;
+}
+
+.work-content .detail p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* Product */
+.product-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #eee;
+    margin-top: 24px;
+}
+
+.product-desc p {
+    margin: 16px 0;
+    font-size: 12px;
+    width: 80%;
+}
+
+.product__img img {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 54px;
+}
+
+footer h5 {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+footer h4 {
+    opacity: 0.7;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+footer p {
+    font-size: 11px;
+    margin-top: 24px;
+    opacity: 0.6;
+    margin-bottom: 24px;
+}
